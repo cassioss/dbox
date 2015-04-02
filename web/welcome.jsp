@@ -25,6 +25,15 @@
     </head>
     <body>
         <div class="container">
+            <% if (request.getAttribute("changedPassword") != null) {
+                    Boolean changedPassword = (Boolean) request.getAttribute("changedPassword");
+                    if (changedPassword) {
+            %>
+            <div class="alert alert-success" style="text-align: center;" role="alert">
+                Password changed successfully!
+            </div>
+            <%}
+                    }%>
             <h2 class="form-signin-heading" style="text-align: center;">Hello, <% out.print(name);%>!</h2>
             <form class="form-signin" action="ShowFriends" method="POST">
                 <input type="hidden" name="name" value="<% out.print(name);%>">
@@ -40,6 +49,7 @@
             <form class="form-signin" action="RequestDelete" method="POST">
                 <input type="hidden" name="email" value="<% out.print(email);%>">
                 <button class="btn btn-lg btn-danger btn-primary btn-block" type="submit">Delete my account</button>
+                <button onclick="window.location.href = 'signin.jsp'" class="btn btn-lg btn-primary btn-block" type="button">Logout</button>
             </form>
             <%
                 ArrayList<String> allFriends = (ArrayList<String>) request.getAttribute("friends");

@@ -78,6 +78,7 @@ public class RequestPassword extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("/welcome.jsp");
         request.setAttribute("name", name);
         request.setAttribute("email", email);
+        request.setAttribute("changedPassword", true);
         dispatcher.forward(request, response);
     }
 

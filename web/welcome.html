@@ -42,50 +42,44 @@
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
-
+          <h1 class="page-header">Hello, person!</h1>
           <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-			  
-			<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+            <div class="col-md-6 placeholder">
+				<span class="glyphicon glyphicon-file" aria-hidden="true" style="font-size: 300%;"></span>
+				<h4>Add a file</h4>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+            <div class="col-md-6 placeholder">
+				<span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="font-size: 300%;"></span>
+				<h4>Add a folder</h4>
             </div>
           </div>
 
-          <h2 class="sub-header">Files</h2>
+          <h2 class="sub-header">Your files</h2>
           <div class="table-responsive">
-            <table class="table table-striped">
-			  <col width="30%">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>URL</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-              </tbody>
-            </table>
+			<form>
+				<table class="table table-striped">
+				  <col width="100px">
+				  <col width="30%">
+				  <col>
+				  <col width="100px">
+				  <thead>
+					<tr>
+					  <th>ID</th>
+					  <th>Name</th>
+					  <th>URL</th>
+					  <th>Action</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>1,001</td>
+					  <td>File</td>
+					  <td>simple_url.com</td>
+					  <td class="danger" style="text-align: center;">DELETE</td>
+					</tr>
+				  </tbody>
+				</table>
+			</form>
           </div>
         </div>
       </div>
